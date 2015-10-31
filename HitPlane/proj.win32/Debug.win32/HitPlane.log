@@ -1,0 +1,61 @@
+﻿生成启动时间为 2015/10/30 23:58:37。
+     1>项目“D:\cocosgame\HitPlane\proj.win32\HitPlane.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\developtool\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.8\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug.win32\\" /Fd"Debug.win32\vc140.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt  /wd4430 PlaneLayer.cpp
+         PlaneLayer.cpp
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(6): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(70): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(78): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(33): warning C4996: 'cocos2d::SpriteFrameCache::sharedSpriteFrameCache': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\2d\ccspriteframecache.h(73): note: 参见“cocos2d::SpriteFrameCache::sharedSpriteFrameCache”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(35): warning C4996: 'cocos2d::Director::sharedDirector': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\base\ccdirector.h(136): note: 参见“cocos2d::Director::sharedDirector”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(44): warning C4996: 'cocos2d::SpriteFrameCache::spriteFrameByName': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\2d\ccspriteframecache.h(211): note: 参见“cocos2d::SpriteFrameCache::spriteFrameByName”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(45): warning C4996: 'cocos2d::SpriteFrameCache::spriteFrameByName': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\2d\ccspriteframecache.h(211): note: 参见“cocos2d::SpriteFrameCache::spriteFrameByName”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(84): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(91): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(92): warning C4996: 'cocos2d::CCSize': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(776): note: 参见“cocos2d::CCSize”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(93): warning C4996: 'cocos2d::CCSize': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(776): note: 参见“cocos2d::CCSize”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(87): warning C4996: 'cocos2d::Director::sharedDirector': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\base\ccdirector.h(136): note: 参见“cocos2d::Director::sharedDirector”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(92): warning C4996: 'cocos2d::Director::sharedDirector': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\base\ccdirector.h(136): note: 参见“cocos2d::Director::sharedDirector”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(112): warning C4996: 'cocos2d::CCPoint': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(775): note: 参见“cocos2d::CCPoint”的声明
+     1>d:\cocosgame\hitplane\proj.win32\planelayer.cpp(112): warning C4996: 'cocos2d::CCSize': 被声明为已否决
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\deprecated\ccdeprecated.h(776): note: 参见“cocos2d::CCSize”的声明
+       PreLinkEvent:
+         if not exist "D:\cocosgame\HitPlane\proj.win32\Debug.win32\" mkdir "D:\cocosgame\HitPlane\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.8\prebuilt\win32\*.*" "D:\cocosgame\HitPlane\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         复制了 60 个文件
+       Link:
+         D:\developtool\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\cocosgame\HitPlane\proj.win32\Debug.win32\HitPlane.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\cocosgame\HitPlane\proj.win32\Debug.win32\ /LIBPATH:D:\cocosgame\HitPlane\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\cocosgame\HitPlane\proj.win32\Debug.win32\HitPlane.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\cocosgame\HitPlane\proj.win32\Debug.win32\HitPlane.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\BulletLayer.obj
+         Debug.win32\HelloWorldPlayer.obj
+         Debug.win32\main.obj
+         Debug.win32\PlaneLayer.obj
+         HitPlane.vcxproj -> D:\cocosgame\HitPlane\proj.win32\Debug.win32\HitPlane.exe
+       CustomBuildStep:
+         if not exist "D:\cocosgame\HitPlane\proj.win32\Debug.win32\" mkdir "D:\cocosgame\HitPlane\proj.win32\Debug.win32\"
+         xcopy "D:\cocosgame\HitPlane\proj.win32\..\Resources" "D:\cocosgame\HitPlane\proj.win32\Debug.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         复制了 0 个文件
+     1>已完成生成项目“D:\cocosgame\HitPlane\proj.win32\HitPlane.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:13.59
