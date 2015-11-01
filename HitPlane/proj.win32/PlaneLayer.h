@@ -11,5 +11,4 @@ public:
 	virtual bool init();
 	static PlaneLayer* sharedPlane;
 	bool isAlive = true;
-	void moveTo(cocos2d::CCPoint location);
 };

@@ -60,55 +60,50 @@ bool PlaneLayer::init()
 		//// 获取事件所绑定的 target 
 		auto target = static_cast<PlaneLayer*>(event->getCurrentTarget());
 
-		//获得当前滑动触摸的坐标值
-		auto touchLocation = touch->getLocation();
-		
+		//获取当前屏幕宽高
+		auto winSize = CCDirector::getInstance()->getWinSize();
+
 		//获取当前点击点所在相对按钮的位置坐标
 		Point locationInNode = target->convertToNodeSpace(touch->getLocation());
 		Size s = target->getContentSize();
 		Rect rect = Rect(0, 0, s.width, s.height);
-		CCPoint beginPoint = touch->getLocationInView();
+
+		//获得当前滑动触摸的坐标值
+		auto touchLocation = touch->getLocation();
+
+		//判断触摸位置是否超出屏幕
+		auto locationX = touchLocation.x;
+		auto locationY = touchLocation.y;
+
+		if (locationX <= s.width /2)
+		{
+			locationX = s.width / 2;
+		}
+
+		if (locationX >= winSize.width - s.width / 2)
+		{
+			locationX = winSize.width - s.width / 2;
+		}
+
+		if (locationY <= s.height / 2)
+		{
+			locationY = s.height / 2;
+		}
+
+		if (locationY >= winSize.height - s.height / 2)
+		{
+			locationY = winSize.height - s.height / 2;
+		}
+		
 		// 点击范围判断检测
 		if (rect.containsPoint(locationInNode))
 		{
-			log("touchX = %f, touchY = %f.", touchLocation.x, touchLocation.y);
-			target->setPosition(Point(touchLocation.x, touchLocation.y));
+			log("touchX = %f, touchY = %f.", locationX, locationY);
+			target->setPosition(Point(locationX, locationY));
 			//target->moveTo(touchLocation);
 		}
 	};
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(onTouchListener,hero);
 	return true;
 }
-
-
-void PlaneLayer::moveTo(CCPoint toPoint)
-{
-	//飞机及游戏状态判断  
-	if (!CCDirector::sharedDirector()->isPaused())
-	{
-		this->setPosition(Point(toPoint.x, toPoint.y));
-		//进行边界判断,不可超出屏幕  
-		CCPoint actualPoint;
-		CCSize winSize = CCDirector::sharedDirector()->getWinSize();
-		CCSize planeSize = this->getChildByTag(AIRPLANE)->getContentSize();
-		if (toPoint.x<planeSize.width / 2)
-		{
-			toPoint.x = planeSize.width / 2;
-		}
-		if (toPoint.x>winSize.width - planeSize.width / 2)
-		{
-			toPoint.x = winSize.width - planeSize.width / 2;
-		}
-		if (toPoint.y<planeSize.height / 2)
-		{
-			toPoint.y = planeSize.height / 2;
-		}
-		if (toPoint.y>winSize.height - planeSize.height / 2)
-		{
-			toPoint.y = winSize.height - planeSize.height / 2;
-		}
-		//this->getChildByTag(AIRPLANE)->setPosition(toPoint);
-	}
-}
-
 
